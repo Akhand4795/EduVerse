@@ -40,12 +40,10 @@ function InitialFocus() {
   return (
     <>
       <div className="w-full h-screen bg-[#F8F6F2] overflow-hidden">
-        <Box className=" flex w-full h-full items-center justify-center">
-          <Box className=" flex flex-col w-1/4 h-2/5 bg-yellow items-center  ">
-            <div className="mt-6">
-              <h2 className="text-2xl font-semibold text-black ml-2">
-                Sign up as Tutor
-              </h2>
+      <Box className="flex flex-col md:flex-row w-full h-full items-center justify-center">
+          <Box className=" flex flex-col lg:w-1/4 h-2/5  bg-yellow items-center justify-around ">
+            <div className='mt-6'>
+              <h2 className="text-2xl font-semibold text-black ml-2">Sign up as Tutor</h2>
             </div>
             <div className="align-middle justify-center items-center py-6 px-10 text-justify ">
               <span>
@@ -65,11 +63,9 @@ function InitialFocus() {
               </Button>
             </div>
           </Box>
-          <Box className="flex flex-col w-1/4 h-2/5 items-center bg-blue">
-            <div className="mt-6">
-              <h2 className="text-2xl font-semibold text-white ml-2">
-                Sign up as Student
-              </h2>
+          <Box className='flex flex-col lg:w-1/4 h-2/5 bg-blue items-center justify-around' >
+            <div className='mt-6'>
+              <h2 className="text-2xl font-semibold text-white ml-2">Sign up as Student</h2>
             </div>
             <div className="align-middle justify-center items-center py-6 px-10 text-justify text-white">
               <span>
