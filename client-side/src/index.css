@@ -8,9 +8,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  h1{
-    font-family: 'Ubuntu', sans-serif;
-  }
   h2,span,a{
     font-family: 'Roboto Slab', serif;
   }
@@ -21,6 +18,9 @@
   button{
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
+  }
+  h1{
+    font-family: 'Poppins', sans-serif;
   }
   
 }
