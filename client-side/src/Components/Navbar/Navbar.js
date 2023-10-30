@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-    <flex className='overflow-hidden'>
+    <flex >
     <Box display='flex' className='h-20 overflow-hidden' bg='#FFFFFF'>
     <Box bg='#FFFFFF' w='1920 px' p={4} color='Black' className='flex justify-between items-center overflow-hidden'>
     <h1 className="text-2xl font-semibold text-black ml-2"> <Link to="/"><span>Edu</span><span className='text-blue'>Verse</span> </Link></h1>
