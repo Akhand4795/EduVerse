@@ -13,7 +13,10 @@ module.exports = {
       backgroundColor:{
         'yellow': '#FFE143',
         'blue':'#2EB8CB'
-      } 
+      },
+      height: {
+        '384': '18rem',
+      },
     }
   },
   plugins: [],
