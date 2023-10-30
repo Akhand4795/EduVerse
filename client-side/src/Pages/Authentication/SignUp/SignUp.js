@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Modal,
   ModalOverlay,
@@ -15,15 +15,22 @@ import {
   Box,
   InputGroup,
   InputRightElement,
-} from '@chakra-ui/react';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import { VisibilityOff } from '@mui/icons-material';
-import { Link } from 'react-router-dom';
+} from "@chakra-ui/react";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import { VisibilityOff } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 function InitialFocus() {
-  const { isOpen: isOpen1, onOpen: onOpen1, onClose: onClose1 } = useDisclosure(); // Changed variable names here
-  const { isOpen: isOpen2, onOpen: onOpen2, onClose: onClose2 } = useDisclosure();
-
+  const {
+    isOpen: isOpen1,
+    onOpen: onOpen1,
+    onClose: onClose1,
+  } = useDisclosure(); // Changed variable names here
+  const {
+    isOpen: isOpen2,
+    onOpen: onOpen2,
+    onClose: onClose2,
+  } = useDisclosure();
 
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
@@ -35,216 +42,292 @@ function InitialFocus() {
       <div className="w-full h-screen bg-[#F8F6F2] overflow-hidden">
         <Box className=" flex w-full h-full items-center justify-center">
           <Box className=" flex flex-col w-1/4 h-2/5 bg-yellow items-center  ">
-            <div className='mt-6'>
-              <h2 className="text-2xl font-semibold text-black ml-2">Sign up as Tutor</h2>
+            <div className="mt-6">
+              <h2 className="text-2xl font-semibold text-black ml-2">
+                Sign up as Tutor
+              </h2>
             </div>
-            <div className='align-middle justify-center items-center py-6 px-10 text-justify '  >
-              <span >Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, repellendus? ipsum dolor sit amet consectetur adipisicing elit. Impedit, earum?</span>
+            <div className="align-middle justify-center items-center py-6 px-10 text-justify ">
+              <span>
+                Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam, repellendus? ipsum dolor sit amet consectetur
+                adipisicing elit. Impedit, earum?
+              </span>
             </div>
             <div>
-              <Button bg='#2EB8CB' color='white' _hover={{ bg: '#FFE143', color: '#ffff' }} onClick={onOpen2}>Sign up</Button>
+              <Button
+                bg="#2EB8CB"
+                color="white"
+                _hover={{ bg: "#FFE143", color: "#ffff" }}
+                onClick={onOpen2}
+              >
+                Sign up
+              </Button>
             </div>
           </Box>
-          <Box className='flex flex-col w-1/4 h-2/5 items-center bg-blue' >
-            <div className='mt-6'>
-              <h2 className="text-2xl font-semibold text-white ml-2">Sign up as Student</h2>
+          <Box className="flex flex-col w-1/4 h-2/5 items-center bg-blue">
+            <div className="mt-6">
+              <h2 className="text-2xl font-semibold text-white ml-2">
+                Sign up as Student
+              </h2>
             </div>
-            <div className='align-middle justify-center items-center py-6 px-10 text-justify text-white'  >
-              <span>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, repellendus? ipsum dolor sit amet consectetur adipisicing elit. Impedit, earum?</span>
+            <div className="align-middle justify-center items-center py-6 px-10 text-justify text-white">
+              <span>
+                Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam, repellendus? ipsum dolor sit amet consectetur
+                adipisicing elit. Impedit, earum?
+              </span>
             </div>
             <div>
-              <Button bg='#FFE143' _hover={{ bg: '#2EB8CB', color: '#ffff' }} onClick={onOpen1}>Sign up</Button>
+              <Button
+                bg="#FFE143"
+                _hover={{ bg: "#2EB8CB", color: "#ffff" }}
+                onClick={onOpen1}
+              >
+                Sign up
+              </Button>
             </div>
           </Box>
         </Box>
       </div>
 
-
-      <div className='flex align-middle justify-center items-center mt-10 bottom-2'>
-        <Modal
-          initialFocusRef={initialRef}
-          finalFocusRef={finalRef}
-          isOpen={isOpen1} // Corrected to use isOpen1
-          onClose={onClose1} // Corrected to use onClose1
-          isCentered
-        >
+      <Modal
+        initialFocusRef={initialRef}
+        finalFocusRef={finalRef}
+        isOpen={isOpen1} // Corrected to use isOpen1
+        onClose={onClose1} // Corrected to use onClose1
+        isCentered
+      >
+        <div className="flex align-middle justify-center items-center mt-10 bottom-2">
           <ModalOverlay />
-          <ModalContent className=''>
+          <ModalContent className="">
             <ModalHeader>
-              <div className=' w-full flex flex-col align-center justify-center items-center text-center '><h4 className='text-l font-semibold'> Sign up as a Student</h4>
-                <p className='text-sm'>Welcome Back, Please login to continue</p>
-                <hr className='color-black' />
-
-
+              <div className=" w-full flex flex-col align-center justify-center items-center text-center ">
+                <h4 className="text-l font-semibold"> Sign up as a Student</h4>
+                <p className="text-sm">
+                  Welcome Back, Please login to continue
+                </p>
+                <hr className="color-black" />
               </div>
             </ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>
-              <div className='flex'>
-                <FormControl className=''>
+              <div className="flex">
+                <FormControl className="">
                   <FormLabel>First name</FormLabel>
-                  <Input ref={initialRef} type='name' placeholder="Enter Here..." />
+                  <Input
+                    ref={initialRef}
+                    type="name"
+                    placeholder="Enter Here..."
+                  />
                 </FormControl>
 
-                <FormControl className='mx-2'>
+                <FormControl className="mx-2">
                   <FormLabel>Last name</FormLabel>
-                  <Input type='name' placeholder="Enter Here..." />
+                  <Input type="name" placeholder="Enter Here..." />
                 </FormControl>
               </div>
 
               <FormControl mt={4}>
                 <FormLabel>User Name</FormLabel>
-                <Input type='name' placeholder="Enter Here..." />
+                <Input type="name" placeholder="Enter Here..." />
               </FormControl>
               <FormControl mt={4}>
                 <FormLabel>Email</FormLabel>
-                <Input type='email' placeholder="Enter Here..." />
+                <Input type="email" placeholder="Enter Here..." />
               </FormControl>
 
-              <div className='flex' >
-                <FormControl className='' mt={4} >
+              <div className="flex">
+                <FormControl className="" mt={4}>
                   <FormLabel>Password</FormLabel>
                   <InputGroup>
-                    <Input type={toggle ? "text" : "password"} placeholder='******' />
+                    <Input
+                      type={toggle ? "text" : "password"}
+                      placeholder="******"
+                    />
                     <InputRightElement>
-                      <Button onClick={() => setToggle(!toggle)} >
+                      <Button onClick={() => setToggle(!toggle)}>
                         {toggle ? <VisibilityIcon /> : <VisibilityOff />}
                       </Button>
                     </InputRightElement>
                   </InputGroup>
                 </FormControl>
 
-                <FormControl className='mx-2' mt={4}>
+                <FormControl className="mx-2" mt={4}>
                   <FormLabel> Confirm Password</FormLabel>
                   <InputGroup>
-                    <Input type={toggle ? "text" : "password"} placeholder='******' />
+                    <Input
+                      type={toggle ? "text" : "password"}
+                      placeholder="******"
+                    />
                     <InputRightElement>
-                      <Button onClick={() => setToggle(!toggle)} >
+                      <Button onClick={() => setToggle(!toggle)}>
                         {toggle ? <VisibilityIcon /> : <VisibilityOff />}
                       </Button>
                     </InputRightElement>
                   </InputGroup>
-
                 </FormControl>
               </div>
-
             </ModalBody>
-            <div className=' w-full flex flex-col align-center items-center justify-center px-7 text-center'><p className='text-s font-semibold px-4 '> By creating an account, you agree EduVerse’s <span className='text-s text-blue'> <Link to="/termConsitions">all Terms & Conditions</Link>
-            </span>  and <span className='text-s text-blue' > <Link to="/privacy" >Privacy Policy</Link> </span></p>
+            <div className=" w-full flex flex-col align-center items-center justify-center px-7 text-center">
+              <p className="text-s font-semibold px-4 ">
+                {" "}
+                By creating an account, you agree EduVerse’s{" "}
+                <span className="text-s text-blue">
+                  {" "}
+                  <Link to="/termConsitions">all Terms & Conditions</Link>
+                </span>{" "}
+                and{" "}
+                <span className="text-s text-blue">
+                  {" "}
+                  <Link to="/privacy">Privacy Policy</Link>{" "}
+                </span>
+              </p>
             </div>
 
-            <div className='px-4 pt-3'>
-              <Button className='w-full' _hover={{ bg: '#2EB8CB', color: '#ffff' }} bg='#FFE143'>Continue</Button>
+            <div className="px-4 pt-3">
+              <Button
+                className="w-full"
+                _hover={{ bg: "#2EB8CB", color: "#ffff" }}
+                bg="#FFE143"
+              >
+                Continue
+              </Button>
             </div>
-            <ModalFooter className='flex'>
-
-              <div className='w-full flex align-middle items-center align-center justify-center text-center h-auto p-3 border hover:border-blue '>
+            <ModalFooter className="flex">
+              <div className="w-full flex align-middle items-center align-center justify-center text-center h-auto p-3 border hover:border-blue ">
                 <p>Already Have an Account? </p>
-                <Link className='text-s text-blue pl-1' to="/login"> Login</Link>
+                <Link className="text-s text-blue pl-1" to="/login">
+                  {" "}
+                  Login
+                </Link>
               </div>
             </ModalFooter>
           </ModalContent>
-        </Modal>
-      </div>
+        </div>
+      </Modal>
 
-      <div className='flex align-middle justify-center items-center mt-10 bottom-2'>
-        <Modal
-          initialFocusRef={initialRef}
-          finalFocusRef={finalRef}
-          isOpen={isOpen2} // Corrected to use isOpen2
-          onClose={onClose2} // Corrected to use onClose2
-          isCentered
-        >
+      <Modal
+        initialFocusRef={initialRef}
+        finalFocusRef={finalRef}
+        isOpen={isOpen2} // Corrected to use isOpen2
+        onClose={onClose2} // Corrected to use onClose2
+        isCentered
+      >
+        <div className="flex align-middle justify-center items-center mt-10 bottom-2">
           <ModalOverlay />
-          <ModalContent className=''>
+          <ModalContent className="">
             <ModalHeader>
-              <div className=' w-full flex flex-col align-center justify-center items-center text-center '><h4 className='text-l font-semibold'> Sign up as a Tutor</h4>
-                <p className='text-sm'>Welcome Back, Please login to continue</p>
-                <hr className='color-black' />
-
-
+              <div className=" w-full flex flex-col align-center justify-center items-center text-center ">
+                <h4 className="text-l font-semibold"> Sign up as a Tutor</h4>
+                <p className="text-sm">
+                  Welcome Back, Please login to continue
+                </p>
+                <hr className="color-black" />
               </div>
             </ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>
-              <div className='flex'>
-                <FormControl className=''>
+              <div className="flex">
+                <FormControl className="">
                   <FormLabel>First name</FormLabel>
-                  <Input ref={initialRef} type='name' placeholder="Enter Here..." />
+                  <Input
+                    ref={initialRef}
+                    type="name"
+                    placeholder="Enter Here..."
+                  />
                 </FormControl>
 
-                <FormControl className='mx-2'>
+                <FormControl className="mx-2">
                   <FormLabel>Last name</FormLabel>
-                  <Input type='name' placeholder="Enter Here..." />
+                  <Input type="name" placeholder="Enter Here..." />
                 </FormControl>
               </div>
 
               <FormControl mt={4}>
                 <FormLabel>Username</FormLabel>
-                <Input type='name' placeholder="Enter Here..." />
+                <Input type="name" placeholder="Enter Here..." />
               </FormControl>
               <FormControl mt={4}>
                 <FormLabel>Email</FormLabel>
-                <Input type='email' placeholder="Enter Here..." />
+                <Input type="email" placeholder="Enter Here..." />
               </FormControl>
 
-              <div className='flex' >
-                <FormControl className='' mt={4} >
+              <div className="flex">
+                <FormControl className="" mt={4}>
                   <FormLabel>Password</FormLabel>
                   <InputGroup>
-                    <Input type={toggle ? "text" : "password"} placeholder='******' />
+                    <Input
+                      type={toggle ? "text" : "password"}
+                      placeholder="******"
+                    />
                     <InputRightElement>
-                      <Button onClick={() => setToggle(!toggle)} >
+                      <Button onClick={() => setToggle(!toggle)}>
                         {toggle ? <VisibilityIcon /> : <VisibilityOff />}
                       </Button>
                     </InputRightElement>
                   </InputGroup>
                 </FormControl>
 
-                <FormControl className='mx-2' mt={4}>
+                <FormControl className="mx-2" mt={4}>
                   <FormLabel> Confirm Password</FormLabel>
                   <InputGroup>
-                    <Input type={toggle ? "text" : "password"} placeholder='******' />
+                    <Input
+                      type={toggle ? "text" : "password"}
+                      placeholder="******"
+                    />
                     <InputRightElement>
-                      <Button onClick={() => setToggle(!toggle)} >
+                      <Button onClick={() => setToggle(!toggle)}>
                         {toggle ? <VisibilityIcon /> : <VisibilityOff />}
                       </Button>
                     </InputRightElement>
                   </InputGroup>
-
                 </FormControl>
               </div>
-
             </ModalBody>
-            <div className=' w-full flex flex-col align-center items-center justify-center px-7 text-center'><p className='text-s font-semibold px-4 '> By creating an account, you agree EduVerse’s <span className='text-s text-blue'> <a href="">all Terms & Conditions</a>
-            </span>  and <span className='text-s text-blue' > <a href="">Privacy Policy</a> </span></p>
+            <div className=" w-full flex flex-col align-center items-center justify-center px-7 text-center">
+              <p className="text-s font-semibold px-4 ">
+                {" "}
+                By creating an account, you agree EduVerse’s{" "}
+                <span className="text-s text-blue">
+                  {" "}
+                  <a href="">all Terms & Conditions</a>
+                </span>{" "}
+                and{" "}
+                <span className="text-s text-blue">
+                  {" "}
+                  <a href="">Privacy Policy</a>{" "}
+                </span>
+              </p>
             </div>
 
-            <div className='px-4 pt-3'>
-              <Button className='w-full' _hover={{ bg: '#2EB8CB', color: '#ffff' }} bg='#FFE143'>Continue</Button>
+            <div className="px-4 pt-3">
+              <Button
+                className="w-full"
+                _hover={{ bg: "#2EB8CB", color: "#ffff" }}
+                bg="#FFE143"
+              >
+                Continue
+              </Button>
             </div>
-            <ModalFooter className='flex'>
-
-              <div className='w-full flex align-middle items-center align-center justify-center text-center h-auto p-3 border hover:border-blue '>
+            <ModalFooter className="flex">
+              <div className="w-full flex align-middle items-center align-center justify-center text-center h-auto p-3 border hover:border-blue ">
                 <p>Already Have an Account? </p>
-                <Link className='text-s text-blue pl-1' to="/login"> Login</Link>
+                <Link className="text-s text-blue pl-1" to="/login">
+                  {" "}
+                  Login
+                </Link>
               </div>
-
-
-
-
 
               {/*  <Button colorScheme="blue" mr={3}>
               SignUp
             </Button> */}
-
             </ModalFooter>
           </ModalContent>
-        </Modal>
-      </div>
+        </div>
+      </Modal>
     </>
   );
 }
-
 
 export default InitialFocus;
