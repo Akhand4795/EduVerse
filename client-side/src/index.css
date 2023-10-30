@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h1{
+    font-family: 'Ubuntu', sans-serif;
+  }
+  h2,span,a{
+    font-family: 'Roboto Slab', serif;
+  }
+  h4{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+  }
+  button{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+  }
+  
+}
