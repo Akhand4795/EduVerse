@@ -39,13 +39,15 @@ function InitialFocus() {
 
   return (
     <>
-      <div className="w-full h-screen bg-[#F8F6F2] overflow-hidden">
-      <Box className="flex flex-col md:flex-row w-full h-full items-center justify-center">
-          <Box className=" flex flex-col lg:w-1/4 h-2/5  bg-yellow items-center justify-around ">
-            <div className='mt-6'>
-              <h2 className="text-2xl font-semibold text-black ml-2">Sign up as Tutor</h2>
+      <div className="w-full h-screen bg-[#F8F6F2]  overflow-hidden">
+        <Box className="flex flex-col md:flex-row w-full h-full items-center justify-center">
+          <Box className=" flex flex-col lg:w-1/4 h-1/2  bg-yellow items-center justify-around overflow-hidden">
+            <div className="mt-6">
+              <h2 className="text-2xl font-semibold text-black ml-2">
+                Sign up as Tutor
+              </h2>
             </div>
-            <div className="align-middle justify-center items-center py-6 px-10 text-justify ">
+            <div className="align-middle justify-center items-center text-l py-2 px-10 text-justify">
               <span>
                 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Magnam, repellendus? ipsum dolor sit amet consectetur
@@ -54,6 +56,7 @@ function InitialFocus() {
             </div>
             <div>
               <Button
+                className="mb-4"
                 bg="#2EB8CB"
                 color="white"
                 _hover={{ bg: "#FFE143", color: "#ffff" }}
@@ -63,11 +66,13 @@ function InitialFocus() {
               </Button>
             </div>
           </Box>
-          <Box className='flex flex-col lg:w-1/4 h-2/5 bg-blue items-center justify-around' >
-            <div className='mt-6'>
-              <h2 className="text-2xl font-semibold text-white ml-2">Sign up as Student</h2>
+          <Box className="flex flex-col lg:w-1/4 h-1/2 bg-blue items-center justify-around overflow-hidden">
+            <div className="mt-6">
+              <h2 className="text-2xl font-semibold text-white ml-2">
+                Sign up as Student
+              </h2>
             </div>
-            <div className="align-middle justify-center items-center py-6 px-10 text-justify text-white">
+            <div className="align-middle justify-center items-center py-2 px-10 text-justify text-white">
               <span>
                 Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Magnam, repellendus? ipsum dolor sit amet consectetur
@@ -76,6 +81,7 @@ function InitialFocus() {
             </div>
             <div>
               <Button
+                className=" mb-4"
                 bg="#FFE143"
                 _hover={{ bg: "#2EB8CB", color: "#ffff" }}
                 onClick={onOpen1}
