@@ -1,11 +1,6 @@
 .App {
   text-align: center;
-  @font-face {
-    font-family: 'Rockwell';
-    src: url('path-to-rockwell.woff') format('woff');
-    /* Add other font formats if needed (e.g., woff2, ttf) */
-  }
-  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 }
 
 .App-logo {
@@ -34,6 +29,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -42,3 +38,4 @@
     transform: rotate(360deg);
   }
 }
+
