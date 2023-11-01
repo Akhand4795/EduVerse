@@ -27,7 +27,7 @@ const Login = () => {
   return (
     <div className="w-screen h-screen md:flex">
       {/* Left Side (Hidden on Small Screens) */}
-      <div className="hidden md:flex md:w-1/2 bg-yellow p-6 flex flex-col text-center justify-center">
+      <div className="hidden md:flex md:w-1/2 bg-yellow p-6 flex-col text-center justify-center">
           <h2 className="text-2xl font-bold text-black">
             "Unlocking Knowledge, Unleashing Potential"
           </h2>

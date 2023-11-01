@@ -39,7 +39,7 @@ function InitialFocus() {
 
   return (
     <>
-      <div className="w-full h-screen bg-[#F8F6F2]  overflow-hidden">
+      <div className="w-full h-screen bg-[#F8F6F2]  ">
         <Box className="flex flex-col md:flex-row w-full h-full items-center justify-center">
           <Box className=" flex flex-col lg:w-1/4 h-1/2  bg-yellow items-center justify-around overflow-hidden">
             <div className="mt-6">
