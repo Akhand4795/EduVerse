@@ -3,11 +3,11 @@ import React from "react";
 
 const Category = () => {
   return (
-    <div className="flex justify-self-center justify-center relative w-4/5 h-14 whitespace-nowrap border-b-2 border-gray-400 m-4">
+    <div className="w-full flex justify-self-center justify-center relative md:w-4/5 h-14 whitespace-nowrap border-b-2 border-gray-400 m-4">
       <span className="flex-none absolute left-2">
         <NavigateBefore />
       </span>
-      <div className="flex-initial w-[40rem] h-12 overflow-x-auto mt-1">
+      <div className="flex-initial w-64 md:w-[40rem] h-12 overflow-x-auto mt-1">
         <span className="mr-4">For you</span>
         <span className="mr-4">Web Development</span>
         <span className="mr-4">App Development</span>

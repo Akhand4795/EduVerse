@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex self-center md:flex flex-col mt-4 w-72">
-        <h4 className="text-xl self-center font-medium">Quick links</h4>
+        <h4 className="text-xl font-medium">Quick links</h4>
         <div className="flex justify-between mt-4">
           <div className="flex flex-col">
             <a href="#">Home</a>
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex self-center text-center md:flex flex-col mt-4 w-72">
+      <div className="flex self-center md:flex flex-col mt-4 w-72">
         <h4 className="text-xl font-medium">Get in Touch</h4>
         <a href="#" className="flex mt-4 mb-1">
           <span>
