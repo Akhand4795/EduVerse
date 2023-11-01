@@ -8,10 +8,10 @@ const Home = () => {
         <div className="w-full h-720 flex flex-col bg-blue">
           <div className="ml-16 h-full bg-blue flex flex-col justify-center items-start tracking-wide font-extrabold ">
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl pb-2 tracking-widest">
-              Revolutionize your{" "}
+              Revolutionize your
             </h1>
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl pb-2 tracking-widest font-extrabold">
-              learning with the best{" "}
+              learning with the best
             </h1>
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl tracking-widest font-bold">
               resources!
@@ -162,7 +162,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
+        <Footer />
       </div>
     </>
   );
