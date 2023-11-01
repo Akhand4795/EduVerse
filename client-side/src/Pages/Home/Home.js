@@ -4,9 +4,10 @@ import Footer from "../../Components/Footer/Footer";
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col w-screen">
-        <div className="w-full h-720 flex flex-col bg-blue">
-          <div className="ml-16 h-full bg-blue flex flex-col justify-center items-start tracking-wide font-extrabold ">
+      <div className="flex-col overflow-x-hidden p-0 m-0"> 
+      <div className="flex flex-col w-screen overflow-y-auto p-0 m-0 ">
+        <div className="w-screen h-720 flex flex-col bg-blue">
+          <div className="ml-16 h-full flex flex-col justify-center items-start tracking-wide font-extrabold ">
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl pb-2 tracking-widest">
               Revolutionize your
             </h1>
@@ -80,7 +81,7 @@ const Home = () => {
 
         {/* //!=================================== */}
         <div className="h-500 sm:h-387 lg:h-240 xl:h-192 bg-white text-black flex flex-col justify-center">
-          <div className="h-1/2 sm:w-3/4 lg:w-1/2 xl:w-1/2 ml-4 sm:ml-20 lg:ml-20 mt-4 text-black flex flex-col justify-center items-start tracking-wide">
+          <div className="h-1/2 sm:w-3/4 lg:w-1/2 xl:w-1/2 ml-4 sm:ml-20 lg:ml-20 text-black flex flex-col justify-center items-start tracking-wide">
             <h1 className="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-extrabold">
               Having Doubts? Ask our Experts!
             </h1>
@@ -93,7 +94,7 @@ const Home = () => {
             </p>
             <div className="flex flex-row font-semibold text-sm">
               <a
-                className="bg-yellow text-black px-4 py-3 rounded-lg hover:bg-yellow-dark hover:text-white mb-4"
+                className="bg-yellow text-black px-4 py-3 rounded-lg hover:bg-yellow-dark hover:text-white"
                 href="https://read-online-books.com/book/read-online-sex-story-an-erotica-short-free"
               >
                 Doubt Solve
@@ -162,7 +163,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <Footer />
+      </div>
+         <Footer /> 
       </div>
     </>
   );
