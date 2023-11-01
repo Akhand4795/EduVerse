@@ -9,11 +9,12 @@ import TermConditions from "./Pages/Term&Conditions/TermConditions";
 import Privacy from "./Pages/Term&Conditions/Privacy";
 import Blog from "./Pages/Blog/Blog";
 import Footer from "./Components/Footer/Footer";
-import StudentDashboard from "./Pages/StudentDashboard/Student";
+import StudentDashboard from "./Pages/StudentDashboard/StudentDashboard";
 import Profile from "./Pages/StudentDashboard/Profile";
+import Dashboard from "./Pages/StudentDashboard/Dashboard/Dashboard";
+import VideoCourses from "./Pages/StudentDashboard/VideoCourses/VideoCourses";
 const App = () => {
   return (
-
     <div className="w-screen h-screen flex flex-col">
       <Navbar />
 
@@ -21,12 +22,11 @@ const App = () => {
         <Route path="/" Component={Home} />
         <Route path="/signUp" Component={SignUp} />
         <Route path="/login" Component={Login} />
-        <Route path="/Student" element={<StudentDashboard />}>
-          <Route path="profile" element={<Profile />} />
-          {/* Define other nested routes here */}
+        <Route path="/Student" Component={StudentDashboard}>
+          <Route path="/Student/profile" Component={Profile} />
+          <Route path="/Student" Component={Dashboard} />
+          <Route path="/Student/videoCourse" Component={VideoCourses} />
         </Route>
-        <Route path="/SignUp" Component={SignUp} />
-        <Route path="/Login" Component={Login} />
         <Route path="/termConsitions" Component={TermConditions} />
         <Route path="/privacy" Component={Privacy} />
         <Route path="/blog" Component={Blog} />
