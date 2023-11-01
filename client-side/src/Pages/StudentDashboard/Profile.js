@@ -21,7 +21,7 @@ const Profile = () => {
                 src='https://bit.ly/dan-abramov'
                 alt='Dan Abramov'
             />
-
+            
         </div>
         <div className='border-b-2 mt-10 border-black w-3/4 self-center ml-[200px]'></div>
         </div>
