@@ -12,7 +12,8 @@ module.exports = {
       },
       backgroundColor:{
         'yellow': '#FFE143',
-        'blue':'#2EB8CB'
+        'blue':'#2EB8CB',
+        'grey': '#F8F6F2',
       },
       height: {
         '384': '18rem',
