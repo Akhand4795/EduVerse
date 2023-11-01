@@ -17,7 +17,6 @@ li {
 
 /* SIDEBAR */
 #sidebar {
-    position: fixed;
     top: 5rem;
     left: 20px; /* Add 'px' to the value for left property */
     width: 280px;
@@ -74,7 +73,7 @@ li {
     top: -40px;
     right: 0;
     box-shadow: 20px 20px 0 var(--grey);
-    z-index: -1;
+ 
 }
 
 #sidebar .side-menu li.active::after {
@@ -86,7 +85,7 @@ li {
     bottom: -40px;
     right: 0;
     box-shadow: 20px -20px 0 var(--grey);
-    z-index: -1;
+    
 }
 
 #sidebar .side-menu li button {
@@ -137,7 +136,7 @@ li {
 }
 
 #content.content-expanded {
-    width:100%;
+    width: calc(100% - 20px);
 }
 
 /* NAVBAR */
