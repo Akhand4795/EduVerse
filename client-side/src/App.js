@@ -8,15 +8,25 @@ import Login from "./Pages/Authentication/Login/Login";
 import TermConditions from "./Pages/Term&Conditions/TermConditions";
 import Privacy from "./Pages/Term&Conditions/Privacy";
 import Blog from "./Pages/Blog/Blog";
+import Footer from "./Components/Footer/Footer";
+import StudentDashboard from "./Pages/StudentDashboard/Student";
+import Profile from "./Pages/StudentDashboard/Profile";
 const App = () => {
   return (
 
     <div className="w-screen h-screen flex flex-col">
       <Navbar />
+
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/signUp" Component={SignUp} />
         <Route path="/login" Component={Login} />
+        <Route path="/Student" element={<StudentDashboard />}>
+          <Route path="profile" element={<Profile />} />
+          {/* Define other nested routes here */}
+        </Route>
+        <Route path="/SignUp" Component={SignUp} />
+        <Route path="/Login" Component={Login} />
         <Route path="/termConsitions" Component={TermConditions} />
         <Route path="/privacy" Component={Privacy} />
         <Route path="/blog" Component={Blog} />
