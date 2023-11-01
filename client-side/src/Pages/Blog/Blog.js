@@ -345,7 +345,7 @@ const Blog = () => {
           <div className="w-96 ml-4 border-t-2 border-gray-400">
             <h4 className="mt-4">Recommended Topics</h4>
             <div className="flex flex-wrap w-96 ">
-              <button className="bg-yellow p-2 rounded-full text-center mt-4 mr-4 font-semibold text-sm text-sm">
+              <button className="bg-yellow p-2 rounded-full text-center mt-4 mr-4 font-semibold text-sm">
                 Technology
               </button>
               <button className="bg-yellow p-2 rounded-full text-center mt-4 mr-4 font-semibold text-sm">
