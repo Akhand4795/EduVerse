@@ -7,19 +7,20 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Authentication/Login/Login";
 import TermConditions from "./Pages/Term&Conditions/TermConditions";
 import Privacy from "./Pages/Term&Conditions/Privacy";
-import Footer from "./Components/Footer/Footer";
+import Blog from "./Pages/Blog/Blog";
 const App = () => {
   return (
+
     <div className="w-screen h-screen flex flex-col">
       <Navbar />
       <Routes>
         <Route path="/" Component={Home} />
-        <Route path="/SignUp" Component={SignUp} />
-        <Route path="/Login" Component={Login} />
+        <Route path="/signUp" Component={SignUp} />
+        <Route path="/login" Component={Login} />
         <Route path="/termConsitions" Component={TermConditions} />
         <Route path="/privacy" Component={Privacy} />
+        <Route path="/blog" Component={Blog} />
       </Routes>
-      <Footer />
     </div>
   );
 };
