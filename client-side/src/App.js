@@ -10,6 +10,7 @@ import Privacy from "./Pages/Term&Conditions/Privacy";
 import Blog from "./Pages/Blog/Blog";
 const App = () => {
   return (
+
     <div className="w-screen h-screen flex flex-col">
       <Navbar />
       <Routes>
