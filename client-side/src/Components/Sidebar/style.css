@@ -17,13 +17,8 @@ li {
 
 /* SIDEBAR */
 #sidebar {
-<<<<<<< HEAD:client-side/src/Pages/StudentDashboard/style.css
-=======
-
->>>>>>> 4092b28e95d04c05218d388b5447e7de8a844639:client-side/src/Components/Sidebar/style.css
     top: 5rem;
     left: 20px; /* Add 'px' to the value for left property */
-    width: 280px;
     height: 100%;
     background: #FFF;
 
@@ -89,11 +84,6 @@ li {
     bottom: -40px;
     right: 0;
     box-shadow: 20px -20px 0 var(--grey);
-<<<<<<< HEAD:client-side/src/Pages/StudentDashboard/style.css
-    
-=======
-
->>>>>>> 4092b28e95d04c05218d388b5447e7de8a844639:client-side/src/Components/Sidebar/style.css
 }
 
 #sidebar .side-menu li button {

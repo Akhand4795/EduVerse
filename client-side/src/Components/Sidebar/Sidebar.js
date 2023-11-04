@@ -33,7 +33,7 @@ const Sidebar = () => {
     });
   }, []);
   return (
-    <section id="sidebar">
+    <section id="sidebar" className="w-1/5 overflow-hidden">
       <div className="text-red-500 text-xl" onClick={() => setToggle(!toggle)}>
         {toggle ? <CloseIcon /> : <MenuIcon className="" />}
       </div>

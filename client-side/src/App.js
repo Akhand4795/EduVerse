@@ -10,7 +10,7 @@ import Privacy from "./Pages/Term&Conditions/Privacy";
 import Blog from "./Pages/Blog/Blog";
 import Footer from "./Components/Footer/Footer";
 import StudentDashboard from "./Pages/StudentDashboard/StudentDashboard";
-import Profile from "./Pages/StudentDashboard/Profile";
+import Profile from "./Pages/StudentDashboard/Profile/Profile";
 import Dashboard from "./Pages/StudentDashboard/Dashboard/Dashboard";
 import VideoCourses from "./Pages/StudentDashboard/VideoCourses/VideoCourses";
 const App = () => {
