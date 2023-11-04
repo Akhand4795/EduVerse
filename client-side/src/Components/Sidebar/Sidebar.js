@@ -33,7 +33,7 @@ const Sidebar = () => {
     });
   }, []);
   return (
-    <section id="sidebar" className="w-1/5 overflow-hidden">
+    <section id="sidebar" className="hidden md:block w-1/5 overflow-hidden">
       <div className="text-red-500 text-xl" onClick={() => setToggle(!toggle)}>
         {toggle ? <CloseIcon /> : <MenuIcon className="" />}
       </div>
@@ -78,19 +78,21 @@ const Sidebar = () => {
               </li>
             </Link>
             <Link to="/Student/videoCourse">
-            <li className="pl-8">
-              <button id="1">
-                <VideoLibrary className="text-blue-500 mr-2" />
-                <span className="text font-semibold">Video Courses</span>
-              </button>
-            </li>
-           </Link>
-            <li className="pl-8">
-              <button id="1">
-                <LocalLibrary className="text-blue-500 mr-2" />
-                <span className="text font-semibold">Books</span>
-              </button>
-            </li>
+              <li className="pl-8">
+                <button id="3">
+                  <VideoLibrary className="text-blue-500 mr-2" />
+                  <span className="text font-semibold">Video Courses</span>
+                </button>
+              </li>
+            </Link>
+            <Link to="/Student/books">
+              <li className="pl-8">
+                <button id="4">
+                  <LocalLibrary className="text-blue-500 mr-2" />
+                  <span className="text font-semibold">Books</span>
+                </button>
+              </li>
+            </Link>
             <li className="pl-8">
               <button id="1">
                 <Psychology className="text-blue-500 mr-2" />

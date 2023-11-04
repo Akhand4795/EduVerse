@@ -13,6 +13,7 @@ import StudentDashboard from "./Pages/StudentDashboard/StudentDashboard";
 import Profile from "./Pages/StudentDashboard/Profile/Profile";
 import Dashboard from "./Pages/StudentDashboard/Dashboard/Dashboard";
 import VideoCourses from "./Pages/StudentDashboard/VideoCourses/VideoCourses";
+import Books from "./Pages/StudentDashboard/Books/Books";
 const App = () => {
   return (
     <div className="w-screen h-screen flex flex-col">
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/Student/profile" Component={Profile} />
           <Route path="/Student" Component={Dashboard} />
           <Route path="/Student/videoCourse" Component={VideoCourses} />
+          <Route path="/Student/books" Component={Books} />
         </Route>
         <Route path="/termConsitions" Component={TermConditions} />
         <Route path="/privacy" Component={Privacy} />
